@@ -57,3 +57,14 @@ $(which subl > /dev/null) || {
   brew cask install sublime-text
 }
 
+$(which kapp > /dev/null) || {
+  brew install k14s/tap/kapp
+}
+
+$(which ytt > /dev/null) || {
+  brew install k14s/tap/ytt
+}
+
+$(which kbld > /dev/null) || {
+  brew install k14s/tap/kbld
+}
