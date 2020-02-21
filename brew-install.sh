@@ -68,3 +68,7 @@ $(which ytt > /dev/null) || {
 $(which kbld > /dev/null) || {
   brew install k14s/tap/kbld
 }
+
+$(which riff > /dev/null) || {
+  brew install riff
+}
