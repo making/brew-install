@@ -24,6 +24,10 @@ $(which terraform > /dev/null) || {
   brew install terraform
 }
 
+$(which vault > /dev/null) || {
+  brew install vault
+}
+
 $(which az > /dev/null) || {
   brew install azure-cli
 }
@@ -71,4 +75,14 @@ $(which kbld > /dev/null) || {
 
 $(which riff > /dev/null) || {
   brew install riff
+}
+
+$(which pack > /dev/null) || {
+  brew install buildpack/tap/pack
+}
+
+$(which yj > /dev/null) || {
+  wget -q -O yj https://github.com/sclevine/yj/releases/download/v4.0.0/yj-macos
+  install yj /usr/local/bin/yj
+  rm -f yj
 }
